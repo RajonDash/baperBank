@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <h1 class="text-6xl font-bold text-center mt-7">
+        YOUR ACCOUNT TOTAL <span class="text-blue-800">TRANSACTION</span>
+    </h1>
+
+
+
+    <main>
+        <section class="mt-8">
+            <div class="grid grid-cols-3 gap-4 w-3/4 mx-auto">
+                <div class="bg-green-800 p-8 rounded text-center	">
+                    <h3 class="text-2xl ">Deposit</h3>
+                    <h4 class="text-4xl">$<span id="deposit-amount">00</span></h4>
+                </div>
+                <div class="bg-red-900 p-8 rounded text-center	">
+                    <h3 class="text-2xl ">Withdraw</h3>
+                    <h4 class="text-4xl">$<span id="withdraw-amount">00</span></h4>
+                </div>
+                <div class="bg-cyan-900	 p-8 rounded text-center">
+                    <h3 class="text-2xl ">Balance</h3>
+                    <h4 class="text-4xl">$<span id="total-balance">00</span></h4>
+                </div>
+                
+
+            </div>
+        </section>
+
+
+
+        <section class="mt-6">
+            <div class="grid grid-cols-2 gap-4 w-3/4 mx-auto">
+                <div class="bg-sky-200 p-8">
+                    <h1 class="text-2xl">Please Deposit</h1>
+
+                    <div>
+                        <input
+                          id="deposit-input"
+                          class="w-full mt-2 px-8 py-4 rounded-lg font-medium bg-gray-100 border border-gray-200 placeholder-gray-500 text-sm focus:outline-none focus:border-gray-400 focus:bg-white"
+                          type="text"
+                          placeholder="$$ amount you want"
+                          name=""
+                          id=""
+                        />
+                        <button id="deposit-btn"   class="inline-block mt-2 rounded bg-blue-800 px-6 pb-2 pt-2.5 text-xs font-medium uppercase leading-normal text-white shadow-[0_4px_9px_-4px_#3b71ca] transition duration-150 ease-in-out hover:bg-primary-600 hover:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] focus:bg-primary-600 focus:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] focus:outline-none focus:ring-0 active:bg-primary-700 active:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] dark:shadow-[0_4px_9px_-4px_rgba(59,113,202,0.5)] dark:hover:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.2),0_4px_18px_0_rgba(59,113,202,0.1)] dark:focus:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.2),0_4px_18px_0_rgba(59,113,202,0.1)] dark:active:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.2),0_4px_18px_0_rgba(59,113,202,0.1)]">
+                            
+                          Deposit
+                        </button>
+                      </div>
+                </div>
+                <div class="bg-sky-200 p-8">
+                    <h1 class="text-2xl">Please Withdraw</h1>
+
+                    <div>
+                        <input
+                          id="withdraw-input"
+                          class="w-full mt-2 px-8 py-4 rounded-lg font-medium bg-gray-100 border border-gray-200 placeholder-gray-500 text-sm focus:outline-none focus:border-gray-400 focus:bg-white"
+                          type="text"
+                          placeholder="$$ amount you want"
+                          name=""
+                          id=""
+                        />
+                        <button id="withdraw-btn" class="inline-block mt-2 rounded bg-blue-800 px-6 pb-2 pt-2.5 text-xs font-medium uppercase leading-normal text-white shadow-[0_4px_9px_-4px_#3b71ca] transition duration-150 ease-in-out hover:bg-primary-600 hover:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] focus:bg-primary-600 focus:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] focus:outline-none focus:ring-0 active:bg-primary-700 active:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] dark:shadow-[0_4px_9px_-4px_rgba(59,113,202,0.5)] dark:hover:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.2),0_4px_18px_0_rgba(59,113,202,0.1)] dark:focus:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.2),0_4px_18px_0_rgba(59,113,202,0.1)] dark:active:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.2),0_4px_18px_0_rgba(59,113,202,0.1)]">
+                            Withdraw
+                        </button>
+                      </div>
+                </div>
+            </div>
+        </section>
+    </main>
+<script src="./bank.js">
+
+</script>
+</body>
+</html>
